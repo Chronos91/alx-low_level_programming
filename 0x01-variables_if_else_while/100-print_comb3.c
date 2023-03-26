@@ -13,15 +13,18 @@ int main(void)
 	for (n = 0; n <= 9; n++)
 	{
 		for (m = 0; m <= 9; m++)
-			if ( n < m && n != m)
+			if (n < m && n != m)
 			{
 				putchar(n + '0');
 				putchar(m + '0');
-				putchar(',');
-				putchar(' ');
+				if (i + j != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 	}
 
 	putchar('\n');
-	return(0);
+	return (0);
 }
